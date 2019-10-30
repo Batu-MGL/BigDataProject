@@ -55,6 +55,7 @@ for msg in consumer1:
             favorite_count_range=[favorite_count_range[0],favorite_count_max]
         
         tweet_dict['topic']=key
+        tweet_dict['timestamp_ms']=tweet_text_json['timestamp_ms']
         tweet_dict['favorite_count_min']=favorite_count_min
         tweet_dict['favorite_count_max']=favorite_count_max
         tweet_dict['favorite_count_average']=favorite_count_average

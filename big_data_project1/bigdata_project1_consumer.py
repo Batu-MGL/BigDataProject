@@ -6,7 +6,7 @@ from kafka import KafkaProducer
 
 # consumer = KafkaConsumer('rams',group_id='my_favorite_group')
 key='iphone'
-consumer1 = KafkaConsumer(key,auto_offset_reset='earliest', bootstrap_servers=['ec2-3-81-83-213.compute-1.amazonaws.com:9092'])
+consumer1 = KafkaConsumer(key,group_id='sentiment_analysis_group', bootstrap_servers=['ec2-3-81-83-213.compute-1.amazonaws.com:9092'])
 producer = KafkaProducer(bootstrap_servers=['ec2-3-81-83-213.compute-1.amazonaws.com:9092'])
 
 for msg in consumer1:
