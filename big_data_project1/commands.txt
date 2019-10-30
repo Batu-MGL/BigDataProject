@@ -14,3 +14,4 @@ sudo ssh -i big_data_project1.pem ubuntu@3.81.83.213
 sudo netstat -tulpn
 sudo kill -SIGINT pid
 
+ec2-3-81-83-213.compute-1.amazonaws.com:9092
