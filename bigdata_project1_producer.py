@@ -11,7 +11,7 @@ import sys
 # client = SimpleClient("127.0.0.1:9092")
 # producer = SimpleProducer(client)
 
-producer = KafkaProducer(bootstrap_servers=['ec2-3-81-83-213.compute-1.amazonaws.com:9092'])
+producer = KafkaProducer(bootstrap_servers=['localhost:9092'])
 consumer_key= 'tYCzKOoBOZft1oy0cC85l0mxU'
 consumer_secret= 'tS2e6cMQv60ZtvoBaAXenLrkr26oSg8c22fyrcjSUvHZGNyIuS'
 access_token= '4808614249-s758NEUKUDHjmspTSqqak1zSNkmgOI3mOyio0tv'

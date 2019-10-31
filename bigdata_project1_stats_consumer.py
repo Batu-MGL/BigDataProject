@@ -7,7 +7,7 @@ from kafka import KafkaProducer
 # consumer = KafkaConsumer('rams',group_id='my_favorite_group')
 
 key='iphone'
-consumer1 = KafkaConsumer(key,auto_offset_reset='earliest', bootstrap_servers=['ec2-3-81-83-213.compute-1.amazonaws.com:9092'])
+consumer1 = KafkaConsumer(key,auto_offset_reset='earliest', bootstrap_servers=['localhost:9092'])
 favorite_count_min=100000000
 favorite_count_max=0
 favorite_count_sum=0
